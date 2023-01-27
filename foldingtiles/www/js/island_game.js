@@ -158,7 +158,7 @@ function playGame() {
   /* Always create a game that uses the gameObject array */
   let game = new IslandGame();
 
-  game.createIslands(1000, 1);
+  game.createIslands(500, 1);
 
   /* Always play the game */
   game.start();

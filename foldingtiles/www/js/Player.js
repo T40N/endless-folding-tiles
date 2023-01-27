@@ -55,7 +55,7 @@ class Player extends GameObject {
           break;
         case 3:
           // if (!isInAir) {
-          this.centreX += 2;
+          this.centreX += 1;
           this.centreY -= 2;
           this.jumpIndicator++;
           this.isOnIsland = false;
@@ -63,7 +63,7 @@ class Player extends GameObject {
           break;
         case 4:
           // if (!isInAir) {
-          this.centreX -= 2;
+          this.centreX -= 1;
           this.centreY -= 2;
           this.isOnIsland = false;
           this.jumpIndicator++;
@@ -93,10 +93,10 @@ class Player extends GameObject {
           this.centreX--;
           break;
         case 3:
-          this.centreX += 2;
+          this.centreX += 1;
           break;
         case 4:
-          this.centreX -= 2;
+          this.centreX -= 1;
           break;
       }
       return;
@@ -115,14 +115,14 @@ class Player extends GameObject {
         this.centreX--;
         break;
       case 3:
-        this.centreX += 2;
+        this.centreX += 1;
         this.centreY--;
         this.jumpIndicator++;
         this.isOnIsland = false;
 
         break;
       case 4:
-        this.centreX -= 2;
+        this.centreX -= 1;
         this.centreY--;
         this.jumpIndicator++;
         this.isOnIsland = false;
